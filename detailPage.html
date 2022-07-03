@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f9358a6ceb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+ <style>
+
+
+.navigation {
+  background-color: #cfe4d8;
+  height: 70px;
+}
+
+.mainHeader {
+  background-color: #fff;
+  height: 180px;
+  border: 1px solid gainsboro;
+}
+
+.mainBody {
+  background-color: #f6f7f9;
+}
+
+.mainHeaderTitle, .profile {
+  margin-left: 30%;
+}
+
+.mainHeaderDate {
+  color: #b3b2b8;
+}
+.profileImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+.mainBodyLeft, .mainBodyRight {
+  margin-top: 3%;
+}
+
+.mainBodyLeft {
+  background-color: #f6f7f9;
+}
+
+.mainBodyRight {
+  background-color: #f6f7f9;
+}
+
+.mainBodyLeftImage {
+  height: 400px;
+  width: 560px;
+  background-color: #d2e3ec;
+  margin-left: 24%;
+  border-radius: 10px;
+}
+
+.mainBodyLeftTextBox {
+  margin-left: 24%;
+}
+
+.stickyBox {
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: sticky;
+  top:0;
+}
+
+
+.stickyBoxMap {
+  background-color: #fff;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+}
+
+.stickyInfo {
+  width: 100%;
+}
+
+.infoLogo {
+  margin-left: 10px;
+  width: 20%;
+}
+
+.infoContent {
+  margin-left: 10px;
+  width: 300px;
+}
+
+.covidCaution {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 140px;
+  width: 70%;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.covidText {
+  font-size: 8px;
+}
+
+.mainFooter {
+  height: 80px;
+  position: sticky;
+  top:0;
+}
+
+.footer {
+  height: 300px;
+  background-color: antiquewhite;
+}
+
+
+</style>
+  </head>
+
+
+
+  <body>
+
+    <!-- 네비게이션 -->
+    <div class="row">
+      <div class="col-md-12 navigation d-flex justify-content-center align-items-center">
+        Navigation
+      </div>
+    </div>
+
+    <!--메인 영역-->
+    <!--header-->
+    <div class="row">
+      <div class="col-md-12 mainHeader">
+        <div class="mainHeaderTitle mt-2">
+          <p class="mainHeaderDate">2022년 7월 1일 금요일</p>
+          <h4>재미있는 수공예 같이 해보시겠어요?</h4>
+        </div>
+        <!--프로필-->
+        <div class="profile mt-3 d-flex">
+          <div class="profileImage d-flex align-items-center"></div>
+          <div class="profileContent ms-3">
+            <p>Hosted By</p>
+            <strong><p>Paul</p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--main-->
+    <div class="mainBody">
+        <div class="row">
+          <div class="col-md-8 mainBodyLeft d-flex flex-column">
+            <div class="mainBodyLeftImage">
+              사진
+            </div>
+            <div class="mainBodyLeftTextBox mt-5 d-flex flex-column">
+
+              <!--세부 정보-->
+              <h4>세부 정보</h4>
+              <div class="mainBodyLeftText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam et quidem, iste quasi dolor nostrum minus quibusdam omnis illum voluptatibus, tempora ut odit saepe nihil natus! Eveniet, unde quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus nemo impedit! Adipisci, voluptas exercitationem veritatis velit laboriosam aliquid debitis libero tempora maiores? Illum sed natus impedit fugiat, pariatur quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur veniam reprehenderit dolorem est, similique magni explicabo sequi consequatur aliquid maxime minima tempore dolores aliquam quibusdam accusantium iste. Asperiores, ipsa.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quasi totam iusto, esse dignissimos perspiciatis modi amet, voluptatem velit adipisci provident dolore quisquam quae accusantium aperiam veritatis libero quo aspernatur!
+              </div>
+
+              <!--주의사항-->
+              <div class="mainBodyLeftCaution mt-4">
+                <h7><i class="fa-solid fa-triangle-exclamation"></i> 주의 사항 </i></h7>
+                <div class="col mt-3 ms-3 d-flex">
+                  <div class="infoLogoCaution">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="infoContent ms-2">
+                    신체가 건강해야 합니다.
+                  </div>
+                </div>
+                <div class="col mt-3 ms-3 d-flex">
+                  <div class="infoLogoCaution">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="infoContent ms-2">
+                    커피/음료는 별도 구매하셔야 합니다.
+                  </div>
+                </div>
+                <div class="col mt-3 ms-3 d-flex">
+                  <div class="infoLogoCaution">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="infoContent ms-2">
+                    대중교통을 이용하시면 더 편합니다.
+                  </div>
+                </div>
+              </div>
+
+              <!--코로나 문구-->
+              <div class="row covidCaution">
+                <div class="col-md-12">
+                  <p class="mt-1"><i class="fa-solid fa-virus-covid"></i><span class="ms-3">코로나 안전조치</span></p>
+                  <span class="covidTextTitle">본 이벤트는 실외에서 진행됩니다.</span><br>
+                  <span class="covidText">이벤트 즈최자는 본 이벤트를 위해 안전 조치를 싱해하고 있습니다. "끼리끼리"는 이러한 예방 조치를 준수하는지
+                    확인할 책임이 없으며 개별적으로 확인하지도 않습니다.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--우측 sticky-->
+          <div class="col-md-4 mainBodyRight">
+            <div class=" row stickyBox">
+              <div class="col-md-12 mt-3 d-flex flex-column w-100">
+                <h5><i class="fa-solid fa-circle-info"> 모임 정보 요약 </i></h5>
+                <div class="stickyInfo d-flex mt-2">
+                  <div class="infoLogo"><i class="fa-solid fa-tags"></i></div>
+                  <div class="infoContent">카테고리 : 공예</div>
+                </div>
+                <div class="stickyInfo d-flex mt-2">
+                  <div class="infoLogo"><i class="fa-solid fa-thumbs-up"></i></div>
+                  <div class="infoContent">평점 : 5점</div>
+                </div>
+                <div class="stickyInfo d-flex mt-2">
+                  <div class="infoLogo"><i class="fa-solid fa-user-group"></i></div>
+                  <div class="infoContent">회원수 : 6명 </div>
+                </div>
+                <div class="stickyInfo d-flex mt-2">
+                  <div class="infoLogo"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="infoContent">주소 : 서울시 강서구 방화동</div>
+                </div>
+              </div>
+              <div class="col-md-12 stickyBoxMap d-flex justify-content-center">
+                지도
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <!--가입 footer-->
+    <div class="row mainFooter">
+      <div class="col d-flex justify-content-evenly align-items-center">
+        <!---->
+        <div class="">
+          <span style="font-size: 8px;">2022년 07월 01일</span><br>
+          <span><strong>재미있는 수공예 같이 해보시겠어요?</strong></span>
+        </div>
+        <!--버튼-->
+        <div class="d-flex">
+          <span><button type="button" class="btn btn-outline-primary">찜하기</button></span>
+          <span class="ms-4"><button type="button" class="btn btn-primary">신청하기</button></span>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer d-flex justify-content-center align-items-center">
+      <h1>Footer</h1>
+    </div>
+
+  </body>
+</html>
