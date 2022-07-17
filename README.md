@@ -1,1 +1,1 @@
-# final_project_ui
+# 파이널 프로젝트 담당 부분 UI 구현
