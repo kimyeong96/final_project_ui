@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--부트스트랩-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/f9358a6ceb.js"
+    crossorigin="anonymous"></script>
+    <style>
+
+      /* 모달 프로필  */
+      .modalProfileImage {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+      }
+
+      .modalProfileImage img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .modalProfileName, .modalProfileGender{
+        padding: 10px;
+        border-bottom: 1px solid #eaeceb;
+      }
+
+      a {
+      text-decoration: none;
+      color: black;
+      }
+
+      a:link{
+        text-decoration:none;
+        color: black;
+      }
+      a:visited{
+        text-decoration:none;
+        color: black;
+      }
+      a:hover{
+        text-decoration:none;
+        color: black;
+      }
+
+    </style>
+
+
+
+</head>
+  <body>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="memberProfileBtn">
+  Launch demo modal
+</button>
+
+<!-- Profile Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">회원 프로필</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <div class="modalProfileImage">
+              <img src="elephant.jpg">
+            </div>
+            <div class="mt-2" style="font-size: 12px;">
+              <span><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp;쪽지보내기</a></span>
+            </div>
+            <!-- <div class="modalProfileGender" style="padding: 10px;">
+              <div><i class="fa-solid fa-location-dot"></i><span class="ms-1">지역 : </span>서울시</div>
+              <div><i class="fa-solid fa-mars-and-venus"></i><span class="ms-1">성별 : </span>여자</div>
+            </div> -->
+          </div>
+          <div class="col-md-8 modalProfileInfo">
+            <div class="modalProfileName">
+              <div class="mt-1" style="font-size:20px;"><strong>박호식(닉네임)</strong></div>
+              <div class="mt-1" style="font-size: 14px;">회원</div>
+            </div>
+            <div class="modalProfileGender d-flex" style="font-size: 14px;">
+              <div><i class="fa-solid fa-location-dot"></i><span class="ms-1">지역 : </span>서울시</div>
+              <div class="ms-3"><i class="fa-solid fa-mars-and-venus"></i><span class="ms-1">성별 : </span>여자</div>
+            </div>
+            <div class="modalProfileIntro" style="padding: 10px;">
+              <div>안녕하세요 저는 박호식이라고 합니다. 야구 좋아하고 운동 좋아해요</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $("#memberProfileBtn").on("click",function() {
+
+  })
+
+
+</script>
+
+
+  </body>
+</html>
